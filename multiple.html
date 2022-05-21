@@ -1,0 +1,33 @@
+<!-- 
+
+http://reference.dashif.org/dash.js/v4.4.0/samples/getting-started/auto-load-multi-video.html
+
+ -->
+<html>
+    <head>
+        <title>Dash.js Rocks</title>
+        <style>
+            video {
+                width: 640px;
+                height: 360px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <video autoplay="" controls="">
+                <source src="https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd" type="application/dash+xml">
+            </video>
+        </div>
+        <div>
+            <video poster="http://mediapm.edgesuite.net/will/dash/temp/poster.png" controls="true">
+                <source src="https://dash.akamaized.net/digitalprimates/fraunhofer/480p_video/heaac_2_0_with_video/Sintel/sintel_480p_heaac2_0.mpd" type="application/dash+xml">
+            </video>
+        </div>
+        <div>
+            <video data-dashjs-player="" autoplay="" src="https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd" controls="true">
+            </video>
+        </div>
+        <script src="http://localhost/video/mp4/dash.all.min.js"></script>
+    </body>
+</html>

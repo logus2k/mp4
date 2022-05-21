@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/google/shaka-packager version v2.5.1-9f11077-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT8981.6396484375S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="text" subsegmentAlignment="true">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="subtitle"/>
+      <Representation id="0" bandwidth="101" mimeType="text/vtt">
+        <BaseURL>avengers_output.vtt</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="video" maxWidth="2592" maxHeight="1080" frameRate="24000/1001" subsegmentAlignment="true" par="12:5">
+      <Representation id="1" bandwidth="673045" codecs="avc1.42c01e" mimeType="video/mp4" sar="1:1" width="864" height="360">
+        <BaseURL>h264_360p.mp4</BaseURL>
+        <SegmentBase indexRange="827-18822" timescale="24000">
+          <Initialization range="0-826"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="3" bandwidth="1108942" codecs="avc1.4d401f" mimeType="video/mp4" sar="1:1" width="1152" height="480">
+        <BaseURL>h264_480p.mp4</BaseURL>
+        <SegmentBase indexRange="862-18857" timescale="24000">
+          <Initialization range="0-861"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="4" bandwidth="3309089" codecs="avc1.4d4028" mimeType="video/mp4" sar="1:1" width="1728" height="720">
+        <BaseURL>h264_720p.mp4</BaseURL>
+        <SegmentBase indexRange="862-18857" timescale="24000">
+          <Initialization range="0-861"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="5" bandwidth="6619410" codecs="avc1.64002a" mimeType="video/mp4" sar="1:1" width="2592" height="1080">
+        <BaseURL>h264_1080p.mp4</BaseURL>
+        <SegmentBase indexRange="866-18861" timescale="24000">
+          <Initialization range="0-865"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="2" contentType="audio" subsegmentAlignment="true">
+      <Representation id="2" bandwidth="210421" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <BaseURL>audio.mp4</BaseURL>
+        <SegmentBase indexRange="823-18782" timescale="48000">
+          <Initialization range="0-822"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
