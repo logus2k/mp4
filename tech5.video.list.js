@@ -41,7 +41,7 @@ class VideoList {
                         }
                     }
                 });
-            
+                
                 player.setAutoPlay(autoplay);
                 player.attachSource(this.tags[x].src);
                 player.attachView(this.tags[x]);

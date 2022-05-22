@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+        <script src="http://localhost/video/mp4/video.js"></script>
+        
+        <!-- Dash.js -->
+        <script src="http://localhost/video/mp4/dash.all.min.js"></script>
+        
+        <!-- videojs-contrib-dash script -->
+        <script src="http://localhost/video/mp4/videojs-dash.js"></script>
+        
+        <script>
+
+        function init()
+        {
+            var player = videojs("video1");
+            
+            player.ready(function() {
+            player.src({
+                src: 'http://localhost/video/mp4/avengers/avengers.mpd',
+                type: 'application/dash+xml'
+            });
+            
+            player.play();
+            });
+        }
+
+        </script>
+
+    </head>
+    <body onload="init();">
+
+        <video id="video1" width="600" height="300" class="video-js vjs-default-skin" controls></video>
+
+    </body>
+</html>
